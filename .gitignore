@@ -1,0 +1,41 @@
+# --- Secrets ---
+# Real env files never go to git. Only the .env.example templates do.
+.env
+.env.*
+!.env.example
+
+# --- Local AI assistant files ---
+Claude.md
+CLAUDE.md
+.claude/settings.local.json
+
+# --- Private study notes (what's public goes in README.md) ---
+docs/DECISIONS.md
+
+# --- Python (api/) ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# --- Node / Next.js (web/) ---
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
+.vercel/
+npm-debug.log*
+coverage/
+
+# --- Editors / OS ---
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
